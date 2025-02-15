@@ -19,6 +19,7 @@ struct Edge {
     {4, 7, MUTEX_INIT()},
 };
 
+// 拓扑排序
 void T_worker(int id) {
     for (int i = 0; i < LENGTH(edges); i++) {
         struct Edge *e = &edges[i];

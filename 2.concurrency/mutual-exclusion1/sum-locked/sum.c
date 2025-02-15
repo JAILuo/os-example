@@ -65,9 +65,18 @@ void T_sum(int tid) {
     printf("Thread %d: sum = %ld\n", tid, sum);
 }
 
+void T_test(int id) {
+    while(1) {
+        lock();
+        printf("%d", id);
+        unlock();
+    }
+}
+
 int main() {
     for (int i = 0; i < T; i++) {
         create(T_sum);
+        //create(T_test);
     }
 
     join();
