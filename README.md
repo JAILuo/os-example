@@ -7,10 +7,5 @@
 # Progress
 
 
-**Examples of each lesson (updating)**
-
-- Update Complete:
-	
-	1. introduction 
-	2. concurrency
+**All examples have been updated**
 
